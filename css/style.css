@@ -1,0 +1,140 @@
+/* Variables */
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --font-color: black;
+}
+
+/* Global property */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* ------------------------------- HEADER ------------------------------- */
+.header {
+  background-color: aqua;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
+/* SECTION TOP-BAR */
+.top-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+.top-nav__list li a {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+/* SECTION HERO */
+.hero__content {
+  text-align: center;
+}
+
+.hero__name {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero__description {
+  font-size: 2.5rem;
+}
+
+/* ------------------------------- MAIN ------------------------------- */
+.main {
+  text-align: center;
+}
+
+/* SECTION ABOUT */
+.about__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about__paragraph {
+  font-size: 2.2rem;
+}
+
+.about hr {
+  margin: 2.5rem auto;
+  width: 60%;
+  height: 1px;
+  color: black;
+  background-color: black;
+}
+
+/* SECTION EXPERIENCE */
+.experience {
+  margin-bottom: 5rem;
+}
+
+.experience__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.experience__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10rem;
+}
+
+.experience__list li {
+  margin: 2rem 5rem;
+}
+
+.fa-html5 {
+  color: #E44D26;
+}
+
+.fa-css3-alt {
+  color: #379AD6;
+}
+
+.fa-js {
+  color: #F0DB4F;
+}
+
+.fa-github-square {
+  color: black;
+}
+
+.fa-react {
+  color: #53C1DE;
+}
+
+/* SECTION PROJECTS */
+.projects__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
