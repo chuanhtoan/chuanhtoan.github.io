@@ -210,20 +210,23 @@ hr {
             .btn {
                 width: 17rem;
                 height: 3.4rem;
+                line-height: 100%;
                 
                 font-size: 1.8rem;
                 font-weight: 700;
                 color: white;
-                background-color: #f50057;
+                border: 3px solid white;
+                background-color: transparent;
                 
                 margin-bottom: 1rem;
                 transition: all .25s ease;
 
                 &:hover {
+                    color: white;
                     border: 3px solid white;
                     border-radius: 25px;
                     
-                    background-color: transparent;
+                    background-color: #f50057;
                 }
             }
         }
@@ -241,12 +244,9 @@ hr {
 }
 
 /* SECTION CONTACT */
-.footer {
-
-}
-
 .contact {
     margin: 0 90px;
+    margin-bottom: 5rem;
 
     &__title {
         font-weight: 700;
@@ -258,11 +258,11 @@ hr {
 
     &__info {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
 
         &--media {
-            width: 50%;
+            width: 712px;
             font-size: 5rem;
             
             div {
@@ -281,7 +281,9 @@ hr {
         }
 
         &--form {
-            width: 50%;
+            width: 712px;
+            max-width: 712px;
+            min-width: 300px;
             padding: 30px;
 
             background-color: khaki;
@@ -322,6 +324,20 @@ hr {
     }
 }
   
+/* SECTION COPYRIGHT */
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 100px;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+
+    color: white;
+    background-color: aqua;
+}
+
 /* RESPONSIVE */
 @media all and (max-width: 1940px) {
     .projects__item--popup h4 {
@@ -348,6 +364,39 @@ hr {
         height: 2.7rem;
         font-size: 1.5rem;
         margin-bottom: .6rem;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .mycontainer {
+        margin: 0 auto;
+    }
+    
+    .contact {
+        margin: 0 auto;
+
+        &__title {
+            margin-bottom: 2rem;
+        }
+
+        &__info {
+            display: block;
+
+            &--media {
+                margin: 0 auto;
+                width: 100%;
+                
+                ul {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            &--form {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
     }
 }
 

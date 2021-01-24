@@ -11516,19 +11516,22 @@ hr {
 .projects__item--popup .btn {
   width: 17rem;
   height: 3.4rem;
+  line-height: 100%;
   font-size: 1.8rem;
   font-weight: 700;
   color: white;
-  background-color: #f50057;
+  border: 3px solid white;
+  background-color: transparent;
   margin-bottom: 1rem;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
 .projects__item--popup .btn:hover {
+  color: white;
   border: 3px solid white;
   border-radius: 25px;
-  background-color: transparent;
+  background-color: #f50057;
 }
 
 .projects__item:hover .projects__item--popup {
@@ -11543,6 +11546,7 @@ hr {
 /* SECTION CONTACT */
 .contact {
   margin: 0 90px;
+  margin-bottom: 5rem;
 }
 
 .contact__title {
@@ -11556,15 +11560,16 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .contact__info--media {
-  width: 50%;
+  width: 712px;
   font-size: 5rem;
 }
 
@@ -11591,7 +11596,9 @@ hr {
 }
 
 .contact__info--form {
-  width: 50%;
+  width: 712px;
+  max-width: 712px;
+  min-width: 300px;
   padding: 30px;
   background-color: khaki;
   border-radius: 5px;
@@ -11629,6 +11636,24 @@ hr {
   background-color: #f50057;
 }
 
+/* SECTION COPYRIGHT */
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100px;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: aqua;
+}
+
 /* RESPONSIVE */
 @media all and (max-width: 1940px) {
   .projects__item--popup h4, .projects__item--popup .h4 {
@@ -11653,6 +11678,37 @@ hr {
     height: 2.7rem;
     font-size: 1.5rem;
     margin-bottom: .6rem;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .mycontainer {
+    margin: 0 auto;
+  }
+  .contact {
+    margin: 0 auto;
+  }
+  .contact__title {
+    margin-bottom: 2rem;
+  }
+  .contact__info {
+    display: block;
+  }
+  .contact__info--media {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contact__info--media ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact__info--form {
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
