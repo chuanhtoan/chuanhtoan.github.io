@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <!-- Top Nav -->
         <nav class="top-nav">
             <div class="mycontainer">
@@ -32,10 +32,15 @@
                         <li><a href="#">ChuAnhToan</a></li>
                     </div>
                     <div>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT ME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT ME</a></li>
+                    </div>
+                    <div>
+                        <li><a href="https://www.facebook.com/chuanhtoan139/" class="fab fa-facebook-square" title="Follow me on Facebook"></a></li>
+                        <li><a href="https://www.linkedin.com/in/chuanhtoan/" class="fab fa-linkedin" title="Follow me on Linkedin"></a></li>
+                        <li><a href="https://github.com/chuanhtoan/" class="fab fa-github-square" title="Follow me on Github"></a></li>
+                        <li><a href="mailto:chuanhtoan139@gmail.com" class="fas fa-envelope-square" title="Contact me via Email"></a></li>
                     </div>
                 </ul>
             </div>
@@ -57,7 +62,7 @@
     <!-- MAIN -->
     <main class="main">
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="mycontainer">
                 <div class="about__content">
                     <h2 class="about__title">
@@ -92,7 +97,7 @@
         </section>
         <!-- /Experience -->
         <!-- Projects -->
-        <section class="projects">
+        <section class="projects" id="portfolio">
             <div class="mycontainer">
                 <h2 class="projects__title">
                     Portfolio
@@ -180,7 +185,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <!-- Contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="mycontainer">
                 <h2 class="contact__title">Contact Me</h2>
                 <div class="contact__info">
@@ -216,16 +221,11 @@
             </div>
         </section>
         <!-- /Contact -->
-
-        <!-- Copyright -->
-        <!-- <section class="copyright">
-            <div class="mycontainer">
-                copyright
-            </div>
-        </section> -->
-        <!-- /Copyright -->
     </footer>
     <!-- /FOOTER -->
+
+    <!-- Scroll to top button -->
+    <a onclick="topFunction()" id="back-to-top" title="Go to top" class="btn btn-light btn-lg"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
