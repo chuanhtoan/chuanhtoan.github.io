@@ -67,36 +67,73 @@ hr {
     &-linkedin, &-linkedin:hover {
         color: #016FAB;
     }
+
+    &-envelope, &-envelope:hover {
+        color: #EA4235;
+    }
 }
 
 /* ------------------------------- HEADER ------------------------------- */
 .header {
-    background-color: aqua;
-    height: 100vh;
-
     margin-bottom: 5rem;
+    min-height: 100vh;
+    height: 1080px;
+    
+    background-color: #0F294C;
+    background-image: url(../images/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Potta One', sans-serif;
+    color: white;
 }
 
 /* SECTION TOP-BAR */
 .top-nav__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     padding-top: 2rem;
     margin-bottom: 10rem;
+
+    div:first-child {
+        margin-left: 10rem;
+    }
+
+    div:last-child {
+        display: flex;
+        margin-right: 10rem;
+    }
 }
 
-.top-nav__list li a {
-    font-size: 1.8rem;
+.top-nav__list li  {
+    margin-right: 1.5rem;
+    transition: all .25s ease;
+    z-index: 1;
+    min-width: fit-content;
 
-    margin-right: 1rem;
+    &:hover {
+        transform: scale(1.15);
+    }
+
+    a {
+        font-size: 1.5rem;
+        color: white;
+    }
 }
 
 /* SECTION HERO */
 .hero {
-    &__content{
-        text-align: center;
-    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+    padding-left: 10rem;
+
+    position: absolute;
+    top: 0;
 
     &__name {
         font-size: 5rem;
@@ -113,6 +150,7 @@ hr {
 /* ------------------------------- MAIN ------------------------------- */
 .main {
     text-align: center;
+    min-height: 100vh;
 }
 
 /* SECTION ABOUT */
@@ -120,6 +158,7 @@ hr {
     &__title {
         font-weight: 700;
         font-size: 2.5rem;
+        font-family: 'Potta One', sans-serif;
 
         margin-bottom: 3rem;
     }
@@ -136,6 +175,7 @@ hr {
     &__title {
         font-weight: 700;
         font-size: 2.5rem;
+        font-family: 'Potta One', sans-serif;
 
         margin-bottom: 3rem;
     }
@@ -159,6 +199,7 @@ hr {
     &__title {
         font-weight: 700;
         font-size: 2.5rem;
+        font-family: 'Potta One', sans-serif;
 
         margin-bottom: 3rem;
     }
@@ -200,6 +241,7 @@ hr {
             &--name {
                 font-weight: 700;
                 color: white;
+
             }
 
             &--skill {
@@ -213,19 +255,19 @@ hr {
                 line-height: 100%;
                 
                 font-size: 1.8rem;
-                font-weight: 700;
+                font-weight: 400;
+                font-family: 'Potta One', sans-serif;
+
                 color: white;
-                border: 3px solid white;
-                background-color: transparent;
+                border: 4px solid #f50057;
+                background-color: #f50057;
                 
                 margin-bottom: 1rem;
                 transition: all .25s ease;
 
                 &:hover {
-                    color: white;
-                    border: 3px solid white;
+                    border: 4px solid white;
                     border-radius: 25px;
-                    
                     background-color: #f50057;
                 }
             }
@@ -244,15 +286,22 @@ hr {
 }
 
 /* SECTION CONTACT */
+.footer {
+    background-color: #201A26;
+}
+
 .contact {
     margin: 0 90px;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
+    padding-bottom: 5rem;
 
     &__title {
         font-weight: 700;
         font-size: 2.5rem;
         text-align: center;
-        
+        font-family: 'Poppins', sans-serif;
+        color: white;
+
         margin-bottom: 3rem;
     }
 
@@ -271,11 +320,20 @@ hr {
             }
 
             li {
-                margin: 1.5rem 3.3rem;
+                margin: 1rem 5rem;
                 transition: transform ease-in-out .2s;
 
                 &:hover {
                     transform: scale(1.15); 
+                }
+
+                a {
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                    transition: all .25s ease;
+            
+                    &:hover {
+                        text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+                    }
                 }
             }
         }
@@ -286,7 +344,7 @@ hr {
             min-width: 300px;
             padding: 30px;
 
-            background-color: khaki;
+            background-color: white;
             border-radius: 5px;
             box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
 
@@ -297,6 +355,7 @@ hr {
             h3 {
                 font-weight: 700;
                 font-size: 1.7rem;
+                font-family: 'Potta One', sans-serif;
             }
 
             input {
@@ -308,7 +367,8 @@ hr {
                 height: 3rem;
                 
                 font-size: 1.2rem;
-                font-weight: 700;
+                font-weight: 400;
+                font-family: 'Potta One', sans-serif;
                 color: white;
                 background-color: #f50057;
                 
@@ -372,6 +432,24 @@ hr {
         margin: 0 auto;
     }
     
+    .top-nav__list {    
+        justify-content: space-around;
+
+        div:first-child {
+            margin-left: 0;
+        }
+    
+        div:last-child {
+            display: flex;
+            margin-right: 0;
+        }
+    }
+
+    .hero {
+        margin: 0;
+        padding: 0;
+    }
+
     .contact {
         margin: 0 auto;
 
@@ -389,6 +467,7 @@ hr {
                 ul {
                     display: flex;
                     justify-content: center;
+                    margin-bottom: 1rem;
                 }
             }
 
@@ -397,6 +476,22 @@ hr {
                 width: 100%;
             }
         }
+    }
+}
+
+@media all and (max-width: 960px) {
+    .contact__info--media {
+        display: none;
+    }
+
+    .top-nav__list div:first-child {
+        display: none;
+    }
+}
+
+@media all and (max-width: 790px) {
+    .top-nav__list {
+        display: none;
     }
 }
 
@@ -424,5 +519,13 @@ hr {
         height: 20%;
         font-size: 20%;
         margin-bottom: 5%;
+    }
+
+    .col-12 {
+        padding: 0;
+    }
+
+    .mycontainer {
+        min-width: fit-content;
     }
 }

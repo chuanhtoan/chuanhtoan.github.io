@@ -11367,11 +11367,21 @@ hr {
   color: #016FAB;
 }
 
+.fa-envelope, .fa-envelope:hover {
+  color: #EA4235;
+}
+
 /* ------------------------------- HEADER ------------------------------- */
 .header {
-  background-color: aqua;
-  height: 100vh;
   margin-bottom: 5rem;
+  min-height: 100vh;
+  height: 1080px;
+  background-color: #0F294C;
+  background-image: url(../images/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Potta One', sans-serif;
+  color: white;
 }
 
 /* SECTION TOP-BAR */
@@ -11379,21 +11389,60 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 2rem;
   margin-bottom: 10rem;
 }
 
+.top-nav__list div:first-child {
+  margin-left: 10rem;
+}
+
+.top-nav__list div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10rem;
+}
+
+.top-nav__list li {
+  margin-right: 1.5rem;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  z-index: 1;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.top-nav__list li:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .top-nav__list li a {
-  font-size: 1.8rem;
-  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 /* SECTION HERO */
-.hero__content {
-  text-align: center;
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-left: 10rem;
+  position: absolute;
+  top: 0;
 }
 
 .hero__name {
@@ -11409,12 +11458,14 @@ hr {
 /* ------------------------------- MAIN ------------------------------- */
 .main {
   text-align: center;
+  min-height: 100vh;
 }
 
 /* SECTION ABOUT */
 .about__title {
   font-weight: 700;
   font-size: 2.5rem;
+  font-family: 'Potta One', sans-serif;
   margin-bottom: 3rem;
 }
 
@@ -11430,6 +11481,7 @@ hr {
 .experience__title {
   font-weight: 700;
   font-size: 2.5rem;
+  font-family: 'Potta One', sans-serif;
   margin-bottom: 3rem;
 }
 
@@ -11457,6 +11509,7 @@ hr {
 .projects__title {
   font-weight: 700;
   font-size: 2.5rem;
+  font-family: 'Potta One', sans-serif;
   margin-bottom: 3rem;
 }
 
@@ -11518,18 +11571,18 @@ hr {
   height: 3.4rem;
   line-height: 100%;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Potta One', sans-serif;
   color: white;
-  border: 3px solid white;
-  background-color: transparent;
+  border: 4px solid #f50057;
+  background-color: #f50057;
   margin-bottom: 1rem;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
 .projects__item--popup .btn:hover {
-  color: white;
-  border: 3px solid white;
+  border: 4px solid white;
   border-radius: 25px;
   background-color: #f50057;
 }
@@ -11544,15 +11597,21 @@ hr {
 }
 
 /* SECTION CONTACT */
+.footer {
+  background-color: #201A26;
+}
+
 .contact {
   margin: 0 90px;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .contact__title {
   font-weight: 700;
   font-size: 2.5rem;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
   margin-bottom: 3rem;
 }
 
@@ -11583,7 +11642,7 @@ hr {
 }
 
 .contact__info--media li {
-  margin: 1.5rem 3.3rem;
+  margin: 1rem 5rem;
   -webkit-transition: -webkit-transform ease-in-out .2s;
   transition: -webkit-transform ease-in-out .2s;
   transition: transform ease-in-out .2s;
@@ -11595,12 +11654,22 @@ hr {
           transform: scale(1.15);
 }
 
+.contact__info--media li a {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.contact__info--media li a:hover {
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+}
+
 .contact__info--form {
   width: 712px;
   max-width: 712px;
   min-width: 300px;
   padding: 30px;
-  background-color: khaki;
+  background-color: white;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
@@ -11613,6 +11682,7 @@ hr {
 .contact__info--form h3, .contact__info--form .h3 {
   font-weight: 700;
   font-size: 1.7rem;
+  font-family: 'Potta One', sans-serif;
 }
 
 .contact__info--form input {
@@ -11623,7 +11693,8 @@ hr {
   width: 10rem;
   height: 3rem;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Potta One', sans-serif;
   color: white;
   background-color: #f50057;
   -webkit-transition: all .25s ease;
@@ -11685,6 +11756,23 @@ hr {
   .mycontainer {
     margin: 0 auto;
   }
+  .top-nav__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .top-nav__list div:first-child {
+    margin-left: 0;
+  }
+  .top-nav__list div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+  }
+  .hero {
+    margin: 0;
+    padding: 0;
+  }
   .contact {
     margin: 0 auto;
   }
@@ -11705,10 +11793,26 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 1rem;
   }
   .contact__info--form {
     margin: 0 auto;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .contact__info--media {
+    display: none;
+  }
+  .top-nav__list div:first-child {
+    display: none;
+  }
+}
+
+@media all and (max-width: 790px) {
+  .top-nav__list {
+    display: none;
   }
 }
 
@@ -11734,6 +11838,14 @@ hr {
     height: 20%;
     font-size: 20%;
     margin-bottom: 5%;
+  }
+  .col-12 {
+    padding: 0;
+  }
+  .mycontainer {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
 }
 /*# sourceMappingURL=style.css.map */
